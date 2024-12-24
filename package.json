@@ -1,0 +1,26 @@
+{
+  "name": "mahjong",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@types/socket.io": "^3.0.1",
+    "@types/socket.io-client": "^1.4.36",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jquery": "^3.7.1",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2"
+  }
+}

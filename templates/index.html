@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tuile.css">
+    <title>Mahjong 🀄️</title>
+</head>
+
+<body>
+    <div class="backgroung">
+        <div class="top-right">
+            <div class="square"></div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="halfSquare halfSquare1"></div>
+            <div class="halfSquare halfSquare2"></div>
+        </div>
+        <div class="top-left">
+            <div class="square"></div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="halfSquare halfSquare1"></div>
+            <div class="halfSquare halfSquare2"></div>
+        </div>
+        <div class="bottom-right">
+            <div class="square"></div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="halfSquare halfSquare1"></div>
+            <div class="halfSquare halfSquare2"></div>
+        </div>
+        <div class="bottom-left">
+            <div class="square"></div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="halfSquare halfSquare1"></div>
+            <div class="halfSquare halfSquare2"></div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div id="gamesPage" class="gameBody d-none">
+        <div class="container"></div>
+        <div class="finish">
+            <div class="content">
+                <h1 id="text-finish"></h1>
+                <a href="/" class="playBtn">Retourner au menu</a>
+            </div>
+        </div>
+    </div>
+    <div id="waitPage" class="waitBody d-none">
+        <h2>En attente de joueur</h2>
+        <div class="loader"></div>
+        <a class="returnBtn" href="/">Retour</a>
+    </div>
+    <div id="homePage" class="homeBody">
+        <div class="left">
+            <h1 class="title">Mahjong</h1>
+            <form id="formBtn">
+                <button style="cursor: pointer;" class="playBtn" type="submit">JOUER <br> <span>en
+                        multijoueur</span></button>
+                <p>aucun joueur en attente</p>
+            </form>
+            <div style="text-align: center;" id="list"></div>
+            <a href="/game" class="playBtn">JOUER <br> <span>en solo</span></a>
+        </div>
+    </div>
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
