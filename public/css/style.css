@@ -1,0 +1,234 @@
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: initial;
+    text-decoration: initial;
+}
+
+.d-none {
+    display: none;
+}
+
+.error p {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.677);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.index,
+.auth,
+.games {
+    background-color: rgba(169, 133, 186, 0.129);
+}
+
+.index header,
+.auth header,
+.games header {
+    background-color: rgb(169, 133, 186);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.index header h1,
+.auth header h1,
+.games header h1 {
+    cursor: pointer;
+}
+
+.index nav,
+.auth nav,
+.games nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.index nav ul button,
+.auth nav ul button,
+.games nav ul button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.index nav ul,
+.auth nav ul,
+.games nav ul {
+    display: flex;
+}
+
+.index nav ul li,
+.auth nav ul li,
+.games nav ul li {
+    margin: 0 15px;
+}
+
+.index main {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.index main h2 {
+    margin-bottom: 50px;
+
+}
+
+.index main .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.index .container figure {
+    background-color: #FFF;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 2px 2px 7px #00000053;
+}
+
+.index .container img {
+    object-fit: cover;
+}
+
+.index .container figure figcaption {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth .container {
+    background-color: rgb(169, 133, 186);
+    padding: 30px 50px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.auth .container h2 {
+    margin-bottom: 35px;
+}
+
+.auth .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth .container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth .container form label {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.auth .container form input {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.auth .container form button {
+    width: 250px;
+    height: 50px;
+    color: rgb(169, 133, 186);
+    background-color: rgb(243, 239, 247);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.auth .container a {
+    text-decoration: underline;
+}
+
+.games .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.games .container .play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.games .container .play {
+    font-size: 70px;
+}
+
+.games .container .play h2 {
+    margin-top: 10vh;
+
+}
+
+.games .container .play form button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(169, 133, 186);
+    color: rgb(243, 239, 247);
+    border: none;
+    cursor: pointer;
+}
+
+.games .container .player {
+    width: 250px;
+    padding: 25px 0;
+}
+
+.games .container .player ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.games .container .player ul button {
+    padding: 10px;
+    background-color: rgb(169, 133, 186);
+    color: rgb(243, 239, 247);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#currentUser {
+    background-color: rgba(169, 133, 186, 0.5);
+}

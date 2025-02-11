@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Connexion • loulouGames</title>
+</head>
+
+<body class="auth">
+    <header>
+        <nav>
+            <h1>
+                <a href="/">loulouGames.fr</a>
+            </h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Connexion</h2>
+            <form action="" method="post" id="loginForm">
+                <div>
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="error"></div>
+                <button type="submit">Se connecter</button>
+            </form>
+            <p>Pas de compte ? <strong><a href="/inscription">S'inscrire</a></strong></p>
+        </div>
+    </main>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
