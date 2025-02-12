@@ -232,3 +232,35 @@ a {
 #currentUser {
     background-color: rgba(169, 133, 186, 0.5);
 }
+
+.invitationContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitationContainer .itemInvitation {
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    height: 120px;
+    text-align: center;
+    background-color: #FFF;
+    position: absolute;
+}
+
+.invitationContainer .itemInvitation div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.invitationContainer .itemInvitation div button {
+    cursor: pointer;
+}

@@ -1,5 +1,4 @@
 const { Socket } = require('socket.io');
-const http = require('http')
 const path = require('path');
 
 const express = require('express');
@@ -11,12 +10,16 @@ const invitationRoutes = require('./src/routes/invitation.routes');
 sequelize.sync({ alter: true });
 
 const app = express();
+const http = require('http').createServer(app);
 
-http
-    .createServer(app)
-    .listen(8080, () => {
-        console.log(`Listening on http://localhost:8080/`);
-    });
+/**
+ * @type {Socket}
+ */
+const io = require('socket.io')(http);
+
+http.listen(8080, () => {
+    console.log(`Listening on http://localhost:8080/`);
+});
 
 app.use('/jquery', express.static(path.join(__dirname, 'node_modules/jquery/dist')));
 app.use(express.static('public'));
@@ -45,3 +48,12 @@ app.get('/inscription', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'templates/auth/registration.html'));
 })
 
+io.on('connection', (socket) => {
+    console.log(`[connection] ${socket.id}`);
+
+    socket.on('playerData', (player) => {
+        console.log(`[playerData] ${player.username}`);
+
+
+    });
+})
